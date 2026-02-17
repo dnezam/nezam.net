@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/> <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="Daniel Nezamabadi – PhD student in formal methods at NTU Singapore. Research on verified compilers, theorem proving with HOL4, and the Candle verified proof assistant.">
+    <link href="style.css" rel="stylesheet"/>
+    <title>Daniel Nezamabadi</title>
+  </head>
+
+  <body>
+    <h1 id="name">Daniel Nezamabadi</h1>
+
+    <img src="files/headshot-daniel-nezamabadi.jpg"
+         alt="Headshot of Daniel Nezamabadi." id="headshot">
+
+    <p>
+      I'm a PhD student in "A Small Formal Methods Group" at
+      <a href="https://www.ntu.edu.sg/computing">NTU Singapore</a>, supervised
+      by <a href="https://tanyongkiam.github.io/">Yong Kiam Tan</a>. Before
+      that I studied at <a href="https://inf.ethz.ch/">ETH Zurich</a>, where I
+      completed my Bachelor's and Master's degrees in Computer Science. During
+      my Master's, I had the opportunity to do an internship
+      with <a href="https://www.cse.chalmers.se/~myreen/">Magnus Myreen</a>,
+      through whom I've met Yong Kiam Tan, leading to
+      <a href="#verified-vcg-compiler-dafny">our work on improving Dafny's
+      trustworthiness</a> using
+      the <a href="https://hol-theorem-prover.org/">HOL4 theorem prover</a>.
+    </p>
+
+    <p>
+      My current research focuses on improving
+      <a href="https://cakeml.org/candle/">Candle</a>, a fully verified clone of
+      <a href="https://hol-light.github.io/">HOL Light</a> that runs on top of
+      <a href="https://cakeml.org/">CakeML</a>, a verified implementation of
+      <a href="https://smlfamily.github.io/">Standard ML</a>.  My aim is for
+      Candle to be able to run existing proof developments efficiently,
+      including <a href="https://cr.yp.to/proofs.html">proofs by
+      D. J. Bernstein</a>,
+      the <a href="https://github.com/awslabs/s2n-bignum/tree/main">s2n-bignum
+      proofs</a>, and the HOL Light parts of
+      <a href="https://github.com/flyspeck/flyspeck">Flyspeck</a>.
+    </p>
+
+    <p>
+      Beyond this, I'm interested in applying foundational formal methods to
+      other areas, such as automated reasoning or quantum computing.  I would
+      also like to explore automated reasoning and artificial intelligence more
+      generally.  Please <a href="#contact-list">reach out</a> if you'd like to
+      collaborate (or just chat).
+    </p>
+
+    <h2>Publications</h2>
+
+    <h3>Conferences</h3>
+
+    <div class="project" id="verified-vcg-compiler-dafny">
+      <h4 class="project-title">
+        Verified VCG and Verified Compiler for Dafny
+      </h4>
+      <p><em>Daniel Nezamabadi</em>, Magnus Myreen, Yong Kiam Tan</p>
+      <p>
+        CPP 2026
+        (<a href="https://dl.acm.org/doi/10.1145/3779031.3779092">Paper</a>,
+         <a href="https://www.youtube.com/watch?v=v_hL8RB4tnE">Talk</a>,
+         <a href="files/slides-verified-vcg-compiler-dafny.pdf">Slides</a>,
+         <a href="https://github.com/CakeML/cakeml/tree/master/compiler/dafny">Code</a>,
+         <a href="files/poster-verified-vcg-compiler-dafny.pdf">Poster</a>)
+      </p>
+      <p class="project-summary">
+        Formalization of a verified verification condition generator and
+        verified compiler for an imperative subset of
+        <a href="https://dafny.org/">Dafny</a> using HOL4.
+      </p>
+    </div>
+
+    <h3>Workshops</h3>
+
+    <div class="project">
+      <h4 class="project-title">
+        Baking for Dafny: A CakeML Backend for Dafny
+      </h4>
+      <p><em>Daniel Nezamabadi</em>, Magnus Myreen</p>
+      <p>
+        Dafny 2025
+        (<a href="https://arxiv.org/abs/2501.05111">Paper</a>,
+         <a href="https://www.youtube.com/watch?v=a08E5274c90">Talk</a>,
+         <a href="files/slides-baking-for-dafny.pdf">Slides</a>)
+      </p>
+      <p class="project-summary">
+        Implementation of a compiler for a subset of Dafny by targeting CakeML
+        using HOL4.
+      </p>
+    </div>
+
+    <h2>Other Projects</h2>
+
+    <div class="project">
+      <h4 class="project-title">
+        Verifying a Lazy Concurrent List-Based Set Algorithm in Iris
+      </h4>
+      <p>Supervised by Isaac van Bakel and <a href="https://research.ralfj.de/">Ralf Jung</a></p>
+      <p>
+        Research in Computer Science @ ETH Zurich (2025)
+        (<a href="files/slides-verifying-lazy-list-iris.pdf">Slides</a>,
+         <a href="https://github.com/dnezam/heaplang-lazy-list-based-set">Code</a>)
+      </p>
+      <p class="project-summary">
+        Verification of <code>add</code> and <code>remove</code> described in
+        <a href="https://dl.acm.org/doi/10.1007/11795490_3">A Lazy Concurrent
+        List-Based Set Algorithm</a>
+        using <a href="https://iris-project.org/">Iris</a>
+        and <a href="https://rocq-prover.org/">Rocq</a>.
+      </p>
+    </div>
+
+    <div class="project">
+      <h4 class="project-title">A Standard Library for Gobra</h4>
+      <p>Supervised by <a href="https://jaoper.com/">João C. Pereira</a> and Peter Müller</p>
+      <p>
+        Practical Work @ ETH Zurich (2024)
+        (<a href="https://ethz.ch/content/dam/ethz/special-interest/infk/chair-program-method/pm/documents/Education/Theses/Daniel_Nezamabadi_PW_Report.pdf">Report</a>,
+         <a href="https://github.com/viperproject/gobra-libs">Code</a>)
+      </p>
+      <p class="project-summary">
+        Implementation of a library of definitions and lemmas used in
+        specifications and proofs
+        for <a href="https://gobra.ethz.ch/">Gobra</a>.
+      </p>
+    </div>
+
+    <h2 id="contact-title">Contact</h2>
+    <ul id="contact-list">
+      <li>Email: <a href="mailto:NEZA0001@e.ntu.edu.sg">NEZA0001@e.ntu.edu.sg</a></li>
+      <li>GitHub: <a href="https://github.com/dnezam">dnezam</a></li>
+    </ul>
+
+    <footer>
+      <p>
+        If you notice any mistakes or have suggestions for improving the text or
+        source code, please <a href="#contact-list">let me know</a>.
+      </p>
+    </footer>
+  </body>
+</html>

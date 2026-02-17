@@ -1,0 +1,95 @@
+/* Colors based on Wikipedia's Vector 2022 skin. */
+
+html {
+    font-family: sans-serif;
+    color: #202122;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#headshot {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 250px;
+}
+
+@media (max-width: 600px) {
+    #name {
+        text-align: center;
+    }
+
+    #headshot {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+}
+
+/* Contact */
+
+#contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+#contact-list li {
+    margin-bottom: 0.25rem;
+}
+
+/* links */
+
+a {
+    text-decoration: none;
+    color: #3366cc;
+}
+
+a:visited {
+    color: #795cb2;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+/* project */
+
+.project {
+    line-height: 1.2;
+}
+
+.project-title {
+    margin-bottom: 0.25rem;
+}
+
+.project p {
+    margin: 0.25rem 0;
+}
+
+.project-summary {
+    font-size: 0.9rem;
+}
+
+.project-summary code {
+    font-family: monospace;
+}
+
+/* Contact */
+
+#contact-title {
+    margin-bottom: 8px;
+}
+
+#contact-list {
+    margin-top: 8px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    border-top: 1px #a2a9b1 solid;
+}
